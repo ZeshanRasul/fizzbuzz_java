@@ -24,8 +24,10 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void getResultsShouldReturnNumberIfTheNumberIsNotDivisibleBy3Or5Or15() {
+    public void getResultsShouldReturnNumberIfTheNumberIsNotDivisibleByAnyOfAbove() {
         assertEquals("11", FizzBuzz.getResult(11));
+        assertEquals("0", FizzBuzz.getResult(0));
+
     }
 
 }
