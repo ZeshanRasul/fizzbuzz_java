@@ -3,12 +3,18 @@
  */
 public class FizzBuzz {
 
+    public static void main(String[] args) {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(getResult(i));
+        }
+    }
+
     public static String getResult(int number){
-        if (number == 0) return String.valueOf(number);
-        else if (isDivisibleByFifteen(number)) return "fizzbuzz";
-        else if (isDivisibleByThree(number)) return "fizz";
-        else if (isDivisibleByFive(number)) return "buzz";
-        return String.valueOf(number);
+    if (number == 0) return String.valueOf(number);
+    else if (isDivisibleByFifteen(number)) return "fizzbuzz";
+    else if (isDivisibleByThree(number)) return "fizz";
+    else if (isDivisibleByFive(number)) return "buzz";
+    return String.valueOf(number);
     }
 
     private static Boolean isDivisibleByThree(int number){

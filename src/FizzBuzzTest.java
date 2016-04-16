@@ -27,7 +27,6 @@ public class FizzBuzzTest {
     public void getResultsShouldReturnNumberIfTheNumberIsNotDivisibleByAnyOfAbove() {
         assertEquals("11", FizzBuzz.getResult(11));
         assertEquals("0", FizzBuzz.getResult(0));
-
     }
 
 }
